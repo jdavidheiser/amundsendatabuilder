@@ -119,4 +119,4 @@ You can use [Neo4jStalenessRemovalTask](../README.md#removing-stale-data-in-neo4
 
 There are two strategies to remove stale data. One is to use `job_publish_tag` and the other one is to use `milliseconds_to_expire`.
 
-For example, you could use `job_publish_tag` to remove stale `DashboardGroup`, `Dashboard`, and  `Query` nodes.  And you could use `milliseconds_to_expire` on `Timestamp` node,  `READ` relation, and `READ_BY`.  One of the main reasons to use `milliseconds_to_expire` is to avoid race condition and it is explained more [here](./README.md#using-publisher_last_updated_epoch_ms-to-remove-stale-data)
+For example, you could use `job_publish_tag` to remove stale `DashboardGroup`, `Dashboard`, and  `Query` nodes.  And you could use `milliseconds_to_expire` on `Timestamp` node,  `READ` relation, and `READ_BY`.  One of the main reasons to use `milliseconds_to_expire` is to avoid race condition and it is explained more [here](../README.md#using-publisher_last_updated_epoch_ms-to-remove-stale-data)
